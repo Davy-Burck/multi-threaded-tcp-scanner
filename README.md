@@ -34,3 +34,15 @@ L'outil s'exécute à l'aide de commutateurs standards :
 
 ```bash
 python3 src/network_scanner.py -t <IP_CIBLE> -p <PORTS> -w <THREADS> -o <FICHIER_EXPORT>
+
+## Exemple d'Exécution (Output)
+
+Voici un exemple de rendu dans le terminal lors d'un scan ciblé :
+
+$ python3 src/network_scanner.py -t 192.168.1.10 -p 1-100 -w 10 -o data/report.json
+[INFO] Démarrage du scan sur 192.168.1.10 (Plage: 1-100, Threads: 10)
+[+] Port 22 ouvert   - Service: SSH (OpenSSH 8.4p1)
+[+] Port 80 ouvert   - Service: HTTP (Apache/2.4.48)
+[+] Port 443 ouvert  - Service: HTTPS
+[INFO] Scan terminé avec succès en 1.42 secondes.
+[INFO] Rapport d'audit généré et stocké dans : data/report.json
