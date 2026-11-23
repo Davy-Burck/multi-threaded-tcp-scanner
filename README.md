@@ -46,3 +46,6 @@ $ python3 src/network_scanner.py -t 192.168.1.10 -p 1-100 -w 10 -o data/report.j
 [+] Port 443 ouvert  - Service: HTTPS
 [INFO] Scan terminé avec succès en 1.42 secondes.
 [INFO] Rapport d'audit généré et stocké dans : data/report.json
+
+##  Rapport d'Audit & Cadre de Scan
+Consulte le cadrage du périmètre, les règles d'engagement, les limites techniques et la structure de rapport dans [RAPPORT_AUDIT_RESEAU.md](./RAPPORT_AUDIT_RESEAU.md).
